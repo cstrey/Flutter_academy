@@ -153,12 +153,12 @@ class JogoEmAndamento extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      //mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        const SizedBox(height: 20),
         Text("Vitorias: $vitorias",
-            style: Theme.of(context).textTheme.headlineMedium!),
+            style: Theme.of(context).textTheme.headlineMedium),
         Text("Derrotas: $derrotas",
-            style: Theme.of(context).textTheme.headlineMedium!),
+            style: Theme.of(context).textTheme.headlineMedium),
         const SizedBox(height: 20),
         ElevatedButton(
           child: const Text("Botão A"),
