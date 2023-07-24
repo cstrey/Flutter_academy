@@ -65,7 +65,7 @@ class _MyWidgetState extends State<MyWidget> {
           color: Colors.green,
           child: Center(
             child: Text("Voce ganhou",
-                style: Theme.of(context).textTheme.headlineMedium!),
+                style: Theme.of(context).textTheme.headlineMedium),
           ));
     }
 

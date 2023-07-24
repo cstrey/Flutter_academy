@@ -39,14 +39,14 @@ class _MyWidgetState extends State<MyWidget> {
     return Column(
       children: [
         Text(
-          'Hello World',
+          "Hello World",
           style: Theme.of(context)
               .textTheme
               .headlineMedium!
               .copyWith(color: _color),
         ),
         ElevatedButton(
-          child: const Text('Cor Aleatoria'),
+          child: const Text("Cor Aleatoria"),
           onPressed: () {
             setState(() {
               _color = Color.fromARGB(
