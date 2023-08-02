@@ -4,10 +4,12 @@ import 'dart:math';
 const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: darkBlue,
       ),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
+      home: const Scaffold(
         body: Center(
           child: MyWidget(),
         ),
@@ -25,6 +27,8 @@ class MyApp extends StatelessWidget {
 }
 
 class MyWidget extends StatefulWidget {
+  const MyWidget({super.key});
+
   @override
   State<MyWidget> createState() => _MyWidgetState();
 }
